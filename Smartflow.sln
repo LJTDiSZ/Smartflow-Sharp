@@ -23,6 +23,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smartflow.Common", "src\Sma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smartflow.Web", "src\Smartflow.Web\Smartflow.Web.csproj", "{0F157590-C515-4CF8-9D8E-FE5961B1400F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{39D8CDF5-032E-45CA-B7BD-CEFFC61E9F78}"
+	ProjectSection(SolutionItems) = preProject
+		SQL\mssqlserver\Demo.sql = SQL\mssqlserver\Demo.sql
+		SQL\init data\init.sql = SQL\init data\init.sql
+		SQL\mssqlserver\Smartflow.sql = SQL\mssqlserver\Smartflow.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
