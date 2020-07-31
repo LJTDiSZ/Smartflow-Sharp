@@ -85,7 +85,7 @@ namespace Smartflow
             {
                 Name = element.Attribute("name").Value,
                 ID = element.Attribute("id").Value,
-                Cooperation = Convert.ToInt32(element.Attribute("cooperation").Value)
+                Cooperation = element.Attribute("cooperation") == null ? 0 : Convert.ToInt32(element.Attribute("cooperation").Value)
             };
 
             string category = element.Attribute("category").Value;
