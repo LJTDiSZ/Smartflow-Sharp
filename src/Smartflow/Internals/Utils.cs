@@ -6,6 +6,7 @@
  */
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -32,6 +33,22 @@ namespace Smartflow.Internals
         public static Object CreateInstance(Type createType)
         {
             return System.Activator.CreateInstance(createType);
+        }
+
+        public static void Log(string type, string message)
+        {
+            using (StreamWriter sw = new StreamWriter("C:\\MyThings\\logs\\sf.log", true, Encoding.UTF8))
+            {
+                sw.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} {type}, {message}");
+            }
+        }
+        public static void LogInfo(string message)
+        {
+            Log("INFO", message);
+        }
+        public static void LogError(string message)
+        {
+            Log("ERRO", message);
         }
     }
 }
