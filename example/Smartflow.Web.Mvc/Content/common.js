@@ -1,8 +1,8 @@
 ﻿(function () {
     window.util = {
-        prefix: 'http://localhost/Smartflow.Web/',
-        process: 'http://localhost/Smartflow.Web/image.html?id=',
-        pending: 'http://localhost/Smartflow.Web/pending.html?ticket=',
+        prefix: '/Smartflow.Web/',
+        process: '/Smartflow.Web/image.html?id=',
+        pending: '/Smartflow.Web/pending.html?ticket=',
         audit: '/Smartflow.Web/auditFrame.html',
         ajaxService: function (settings) {
             var defaultSettings = $.extend({
